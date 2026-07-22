@@ -1,0 +1,38 @@
+default -> command mode
+i -> insert mode
+x,X -> delete letter
+:q -> quit
+:w -> write
+:wq -> write&quit
+:q! -> force quit
+r -> replace
+o,O -> open new line down
+a -> append -> jump into front of word
+u -> undo
+number+command -> number times of run 
+d -> delete
+d + w -> delete word
+d + d -> delete line/cut line
+J -> join with down line  
+G -> go to last line / number+G -> go to number line 
+y -> yank/copy -> yy -> copy line / yw -> copy line
+p -> paste
+/ -> search -> /paste -> in search mode we can find next by press n or Previous by press N
+^ -> start of line 
+$ -> end of line
+. -> repeat
+
+
+
+nvim
+space + e -> open file explorer
+space + f -> search in folder
+space + t -> open terminal
+space + a -> open file with name or folder by name
+space + l -> back to code explorer
+q -> close file explorer 
+:e -> open new tab -> :e style.css
+:ls -> find new tab
+:bn -> next tab
+:bp -> previes tab
+:vsplit spilt 2 tab -> :vsplit style.css
