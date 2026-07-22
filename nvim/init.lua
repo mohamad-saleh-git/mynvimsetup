@@ -48,7 +48,12 @@ require("lazy").setup({
 {
   "williamboman/mason.nvim",
 },
-
+{
+  "windwp/nvim-autopairs",
+},
+{
+  "windwp/nvim-ts-autotag",
+},
 {
   "williamboman/mason-lspconfig.nvim",
 },
@@ -128,7 +133,8 @@ require("nvim-tree").setup()
 -- Status line
 require("lualine").setup()
 
-
+require("nvim-autopairs").setup()
+require("nvim-ts-autotag").setup()
 -----------------------------------------------------------
 -- Keymaps
 -----------------------------------------------------------
@@ -169,7 +175,18 @@ vim.lsp.config("ts_ls", {
 
 vim.lsp.enable("ts_ls")
 
+vim.lsp.config("html", {
+  capabilities = require("cmp_nvim_lsp").default_capabilities()
+})
 
+vim.lsp.enable("html")
+
+
+vim.lsp.config("cssls", {
+  capabilities = require("cmp_nvim_lsp").default_capabilities()
+})
+
+vim.lsp.enable("cssls")
 
 
 
