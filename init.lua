@@ -188,7 +188,19 @@ vim.lsp.config("cssls", {
 
 vim.lsp.enable("cssls")
 
+vim.lsp.config("emmet_language_server", {
+  filetypes = {
+    "html",
+    "css",
+    "scss",
+    "javascriptreact",
+    "typescriptreact",
+    "jsx",
+    "tsx",
+  },
+})
 
+vim.lsp.enable("emmet_language_server")
 
 local cmp = require("cmp")
 
@@ -201,7 +213,8 @@ cmp.setup({
     ["<S-Tab>"] = cmp.mapping.select_prev_item(),
 
     ["<CR>"] = cmp.mapping.confirm(),
-
+    
+    ["<C-b>"] = cmp.mapping.complete(), 
   }),
 
 
