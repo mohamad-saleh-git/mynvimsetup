@@ -21,6 +21,19 @@ p -> paste
 ^ -> start of line 
 $ -> end of line
 . -> repeat
+gg -> start of file
+shift + g -> end of file
+e -> go end of next word
+w-> go start of next word
+b -> go start of perviues word
+number + arrow up -> go to this number line
+number + arrow down -> go this number line
+select your line and with > you can move your line (its like tab)
+
+
+
+
+
 
 
 
@@ -30,6 +43,9 @@ space + f -> search in folder
 space + t -> open terminal
 space + a -> open file with name or folder by name
 space + l -> back to code explorer
+space + d -> delete file
+ctrl+b -> show sujestion
+i -> rename file
 q -> close file explorer 
 :e -> open new tab -> :e style.css
 :ls -> find new tab
