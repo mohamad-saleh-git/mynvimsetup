@@ -42,10 +42,10 @@ nvim
 space + e -> open file explorer
 space + f -> search in folder
 space + t -> open terminal
-space + a -> open file with name or folder by name
+space + a -> create file with name or folder by name
 space + l -> back to code explorer
 space + d -> delete file
-ctrl+b -> show sujestion
+ctrl+space -> show suggestion
 i -> rename file
 q -> close file explorer 
 :e -> open new tab -> :e style.css

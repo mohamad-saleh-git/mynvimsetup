@@ -140,7 +140,9 @@ require("Comment").setup()
 vim.keymap.set("n", "<leader>/", function()
   require("Comment.api").toggle.linewise.current()
 end, { desc = "Toggle comment" })
-
+vim.keymap.set("n", "<leader>n", function()
+  vim.lsp.buf.format({ async = true })
+end, { desc = "Format file" })
 vim.keymap.set("v", "<leader>/", function()
   local esc = vim.api.nvim_replace_termcodes("<ESC>", true, false, true)
   vim.api.nvim_feedkeys(esc, "nx", false)
@@ -231,7 +233,7 @@ cmp.setup({
 
     ["<CR>"] = cmp.mapping.confirm({ select = true }),
     
-    ["<C-b>"] = cmp.mapping.complete(), 
+    ["<C-Space>"] = cmp.mapping.complete(), 
   }),
 
 
