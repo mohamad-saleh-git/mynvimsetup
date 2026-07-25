@@ -9,6 +9,7 @@ r -> replace
 o,O -> open new line down
 a -> append -> jump into front of word
 u -> undo
+shift + u -> redo
 number+command -> number times of run 
 d -> delete
 d + w -> delete word
